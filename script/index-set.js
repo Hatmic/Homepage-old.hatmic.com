@@ -70,3 +70,31 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// friends
+var friends = [
+    {
+        link: "https://coppist.github.io", 
+        author: "Coppist - 奶茶"
+    }, 
+    {
+        link: "https://tolazyer.gitee.io/artwaves",
+        author: "Tolayzer - 帅猫"
+    },
+    {
+        link: "https://zybgw.github.io",
+        author: "Zybgw - 猫鱼"
+    }
+];
+
+var targ = "_blank";
+
+var container = document.getElementById("friends");
+
+friends.forEach(function (fri) {
+    var html = `
+        <p><a href="${fri.link}" target="${targ}">${fri.author}</a></p>
+    `;
+
+    container.innerHTML += html;
+});

@@ -169,6 +169,24 @@ body {
     text-decoration: none;
 }
 
+.friends {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.friends p {
+    color: #FAFAFA;
+}
+
+.friends a {
+    text-decoration: none;
+    color: #FAFAFA;
+    opacity: 0.6;
+}
+
 .author {
     margin-top: 16px;
     margin-bottom: 16px;
