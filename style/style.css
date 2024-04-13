@@ -3,6 +3,8 @@ body {
     color: #FAFAFA;
     background-image: url(https://cdn-community.codemao.cn/47/community/d2ViXzMwMDFfMTExNzIyOF82ODUxMDlfMTcxMjkzOTA3NTgzM19jZjRkOTEyMQ.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .box {
@@ -10,6 +12,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.box {
+    filter: blur(10px);
+    transition: filter 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.box.show {
+    filter: blur(0);
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .profile {
@@ -47,6 +63,30 @@ body {
     text-decoration: none;
     text-align: center;
     color: #FAFAFA;
+}
+
+.text-with-underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    backdrop-filter: blur(50px);
+}
+
+.text-with-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: #FFF;
+    backdrop-filter: blur(50px);
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.text-with-underline:hover:after {
+    width: 100%;
 }
 
 .board {
