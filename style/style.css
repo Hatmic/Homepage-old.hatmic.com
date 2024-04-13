@@ -177,8 +177,12 @@ body {
     color: #FAFAFA;
 }
 
-.friends p {
+.friends .title {
     color: #FAFAFA;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .friends a {
