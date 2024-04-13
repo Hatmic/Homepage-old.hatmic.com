@@ -82,8 +82,8 @@ var friends = [
         author: "Tolayzer - 帅猫"
     },
     {
-        link: "https://zybgw.github.io",
-        author: "Zybgw - 猫鱼"
+        link: "https://zybqw.github.io",
+        author: "Zybqw - 猫鱼"
     }
 ];
 
