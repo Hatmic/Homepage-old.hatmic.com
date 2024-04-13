@@ -2,6 +2,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', SF Pro text, PingFang SC, Helvetica, Helvetica Neue, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, sans-serif, "\5B8B\4F53";
     color: #FAFAFA;
     background-image: url(https://cdn-community.codemao.cn/47/community/d2ViXzMwMDFfMTExNzIyOF82ODUxMDlfMTcxMjkzOTA3NTgzM19jZjRkOTEyMQ.jpeg);
+    background-size: cover;
 }
 
 .box {
