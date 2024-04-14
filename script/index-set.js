@@ -47,28 +47,9 @@ function adjustBorderRadius() {
 // article size
 document.addEventListener("DOMContentLoaded", function() {
     let avatarWidth = document.querySelector('.avatar').offsetWidth;
-    let boardDiv = document.querySelector('.board');
-    let articleDiv = boardDiv.querySelector('.article');
-
-    boardDiv.style.width = avatarWidth + 'px';
-
-    let articleWidth = avatarWidth - 2 * 4; // 考虑padding
-    articleDiv.style.width = articleWidth + 'px';
-
-    let lineHeight = parseFloat(window.getComputedStyle(articleDiv).lineHeight);
-    let articleHeight = 3 * lineHeight; // 假设每行文本的高度相同
-
-    articleDiv.style.height = articleHeight + 'px';
-
-    let paragraphs = articleDiv.querySelectorAll('p');
-    paragraphs.forEach(function(paragraph) {
-        let paragraphWidth = paragraph.offsetWidth;
-        let fontSize = parseFloat(window.getComputedStyle(paragraph).fontSize);
-        let lines = Math.ceil(paragraphWidth / (articleWidth - fontSize));
-        if (lines > 1) {
-            paragraph.style.whiteSpace = 'normal';
-        }
-    });
+    let newArticleWidth = avatarWidth;
+    
+    document.querySelector('.article').style.width = newArticleWidth + 'px';
 });
 
 // friends

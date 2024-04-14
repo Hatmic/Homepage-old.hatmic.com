@@ -103,6 +103,9 @@ body {
     background-color: #FAFAFA;
     opacity: 0.3;
     padding: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .board .title {
@@ -119,12 +122,6 @@ body {
     opacity: 0.8;
 }
 
-.board {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
 .article {
     overflow-y: hidden;
     height: calc(3 * 1.2em);
@@ -133,9 +130,10 @@ body {
 
 .article p {
     margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
+    white-space: normal;
+    overflow: visible;
 }
 
 .article::after {
