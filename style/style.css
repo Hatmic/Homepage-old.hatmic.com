@@ -126,6 +126,10 @@ body {
     overflow-y: hidden;
     height: calc(3 * 1.2em);
     position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .article p {
@@ -165,6 +169,29 @@ body {
 .board p a {
     color: #3d61ff;
     text-decoration: none;
+}
+
+.connection {
+    text-align: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.connection a {
+    text-decoration: none;
+    margin: 0;
+    color: #3d61ff;
+}
+
+.connection img {
+    opacity: 0.6;
+    text-align: center;
+    justify-content: center;
 }
 
 .friends {

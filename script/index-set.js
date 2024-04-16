@@ -52,6 +52,41 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.article').style.width = newArticleWidth + 'px';
 });
 
+// connection
+document.addEventListener("DOMContentLoaded", function() {
+    let paragraphHeight = document.querySelector('p').offsetHeight;
+
+    let connectionImgs = document.querySelectorAll('.conimg');
+
+    connectionImgs.forEach(function(connectionImg) {
+        let newConnectionImgWidth = paragraphHeight * 1.5;
+        connectionImg.style.width = newConnectionImgWidth + 'px';
+    });
+});
+
+var connectionImgList = [
+    {
+        link: "https://github.com/Hatmic",
+        img: "./img/icon-github.png"
+    },
+    {
+        link: "#",
+        img: "./img/icon-qq.png"
+    }
+]
+
+var conta = document.getElementById("connection");
+
+connectionImgList.forEach(function (connectionImgl) {
+    var html5 = `
+        <a href="${connectionImgl.link}" target="_blank">
+            <img src="${connectionImgl.img}" alt="" class="conimg">
+        </a>
+    `;
+
+    conta.innerHTML += html5;
+});
+
 // friends
 var friends = [
     {
