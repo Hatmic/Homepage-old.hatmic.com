@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let connectionImgs = document.querySelectorAll('.conimg');
 
     connectionImgs.forEach(function(connectionImg) {
-        let newConnectionImgWidth = paragraphHeight * 1.5;
+        let newConnectionImgWidth = paragraphHeight * 1.2;
         connectionImg.style.width = newConnectionImgWidth + 'px';
     });
 });
