@@ -1,0 +1,218 @@
+$body-font-stack: -apple-system, BlinkMacSystemFont, SF Pro text, PingFang SC, 'Segoe UI', Helvetica, Helvetica Neue, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, sans-serif, "\5B8B\4F53";$body-color: #FAFAFA;
+$background-image: url("https://cdn-community.codemao.cn/47/community/d2ViXzMwMDFfMTExNzIyOF82ODUxMDlfMTcxMjkzOTA3NTgzM19jZjRkOTEyMQ.jpeg");
+
+body {
+    font-family: $body-font-stack;
+    color: $body-color;
+    background-image: $background-image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+    transition: filter 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    &.show {
+        filter: blur(0);
+    }
+}
+
+%hr-style {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hr {
+    @extend %hr-style;
+}
+
+.profile {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    user-select: none;
+}
+
+.nickname {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.p-intro {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .options {
+        margin-left: 8px;
+        margin-right: 8px;
+        text-decoration: none;
+        text-align: center;
+        color: $body-color;
+    }
+}
+
+@mixin text-underline($color: #FFF) {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $color;
+    backdrop-filter: blur(50px);
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0;
+        background-color: $color;
+        backdrop-filter: blur(50px);
+        transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.text-with-underline {
+    @include text-underline;
+}
+
+.board {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #FAFAFA;
+    opacity: 0.3;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .title {
+        color: #000;
+        opacity: 0.8;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .article {
+        color: #000;
+        opacity: 0.8;
+        overflow-y: hidden;
+        height: calc(3 * 1.2em);
+        position: relative;
+        user-select: none;
+
+        p {
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(transparent, white);
+        }
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #ddd;
+        }
+    }
+
+    p {
+        margin: 0;
+
+        a {
+            color: #3d61ff;
+            text-decoration: none;
+        }
+    }
+}
+
+.connection {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    user-select: none;
+
+    a {
+        text-decoration: none;
+        margin: 0;
+        color: #3d61ff;
+    }
+
+    img {
+        opacity: 0.6;
+    }
+}
+
+.friends {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    .title {
+        color: #FAFAFA;
+        user-select: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FAFAFA;
+        opacity: 0.6;
+    }
+}
+
+.author {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.6;
+    user-select: none;
+}
