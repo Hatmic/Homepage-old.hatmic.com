@@ -10,7 +10,7 @@
   nav: [
     {href: "#home", text: "首页"},
     {href: "#project", text: "项目"},
-    {href: "#blog", text: "博客"},
+    {href: "https://blog.hatmic.com", text: "博客"},
     {href: "#music", text: "音乐"}
   ],
   board: {
