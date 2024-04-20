@@ -17,3 +17,23 @@
 打开你想克隆到的文件夹，打开终端。
 
 输入 `git clone https://github.com/Hatmic/Homepage-hatmic.com.git`，等待片刻后发现文件已经克隆到你的文件夹中。
+
+# hatmic.com
+
+### Introduction
+
+[hatmic.com](https://hatmic.com) is an open-source personal homepage web page independently developed by [Hatmic](https://github.com/Hatmic) and open-sourced in a public repository. You can obtain the source code at [GitHub - Hatmic/Homepage-hatmic.com](https://github.com/Hatmic/Homepage-hatmic.com).
+
+The webpage is developed using HTML + CSS + JavaScript, located in index.html, style, and script respectively. The text, images, and other information involved in the webpage are stored in data.jsonnet.
+
+We also provide an English version, accessible at [en.hatmic.com](https://en.hatmic.com), and it is open-sourced at [GitHub - Hatmic/en.hatmic.com](https://github.com/Hatmic/en.hatmic.com).
+
+Welcome to star and fork my project, and also feel free to follow me!
+
+### Clone to Local
+
+You need to install Git first.
+
+Open the folder you want to clone to and open the terminal.
+
+Type `git clone https://github.com/Hatmic/Homepage-hatmic.com.git`, wait for a moment, and you will find that the files have been cloned into your folder.
