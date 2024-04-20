@@ -18,8 +18,6 @@
 
 输入 `git clone https://github.com/Hatmic/Homepage-hatmic.com.git`，等待片刻后发现文件已经克隆到你的文件夹中。
 
-# hatmic.com
-
 ### Introduction
 
 [hatmic.com](https://hatmic.com) is an open-source personal homepage web page independently developed by [Hatmic](https://github.com/Hatmic) and open-sourced in a public repository. You can obtain the source code at [GitHub - Hatmic/Homepage-hatmic.com](https://github.com/Hatmic/Homepage-hatmic.com).
