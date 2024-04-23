@@ -6,8 +6,6 @@
 
 网页使用 HTML + CSS + JavaScript 开发，分别位于 index.html、style、script 中。并将网页中涉及的文本、图片等信息存储在 data.jsonnet 中。
 
-我们还提供了一个英文版本，可以在 [en.hatmic.com](https://en.hatmic.com) 中访问，开源在 [GitHub - Hatmic/en.hatmic.com](https://github.com/Hatmic/en.hatmic.com) 中。
-
 欢迎 star 和 fork 我的项目，也欢迎关注我！
 
 ### 克隆到本地
@@ -23,8 +21,6 @@
 [hatmic.com](https://hatmic.com) is an open-source personal homepage web page independently developed by [Hatmic](https://github.com/Hatmic) and open-sourced in a public repository. You can obtain the source code at [GitHub - Hatmic/Homepage-hatmic.com](https://github.com/Hatmic/Homepage-hatmic.com).
 
 The webpage is developed using HTML + CSS + JavaScript, located in index.html, style, and script respectively. The text, images, and other information involved in the webpage are stored in data.jsonnet.
-
-We also provide an English version, accessible at [en.hatmic.com](https://en.hatmic.com), and it is open-sourced at [GitHub - Hatmic/en.hatmic.com](https://github.com/Hatmic/en.hatmic.com).
 
 Welcome to star and fork my project, and also feel free to follow me!
 
